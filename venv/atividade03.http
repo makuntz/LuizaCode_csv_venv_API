@@ -1,0 +1,23 @@
+###
+#ver se a aplicacao esta rodando
+GET http://127.0.0.1:8000/
+
+
+###
+# cadastro de musica
+POST http://127.0.0.1:8000/musicas
+{
+    "nome": "Patience",
+    "artista": "Gun's",
+    "tempo": 1
+}
+
+
+### 
+# Consulta
+GET http://127.0.0.1:8000/musicas
+
+
+### 
+#Consulta pelo codigo
+GET http://127.0.0.1:8000/musicas/3
